@@ -6,9 +6,11 @@ form.addEventListener("submit", function (event) {
     const url = input.value;
     console.log("User entered:", url);
     if (validateURL(url)) {
-        console.log("✅ Valid URL");
-    } else {
-        console.log("❌ Invalid URL");
-    }
+    const shortCode = generateShortCode();
+    console.log("Original URL:", url);
+    console.log("Short Code:", shortCode);
+} else {
+    console.log("Invalid URL");
+}
     input.value = "";
 });
