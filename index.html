@@ -13,43 +13,56 @@
 </head>
 <body>
     <header>
+        <h2>ShortIck</h2>
     </header>
 
-    <main>
+    <main><!--Hero Section -> Title Subtitle Description
+    URL Shortener Form -> Label Input Button
+    Result Section
+    History Section-->
+    <section id="hero">
     <h1>Link Shortener</h1>
-    <h3>Shorten Your URLs Instantly</h3>
+    <h2>Shorten Your URLs Instantly</h2>
     <p>Create clean. Shareable Links in seconds.</p>
-    <label for="url-input">
-    Paste URL
-    </label>
-    <input
-    id="url-input"
-    type="url"
-    required
-    placeholder="https://example.com">
-    <button id="shorten-btn">
-    Shorten URL
-    </button>
+    </section>
 
+    <section id="url-shortener-form">
+        <form id="shortener-form">
+        <label for="url-input">
+            Paste your long URL here...
+        </label>
+        <input
+            id="url-input"
+            type="url"
+            required
+            placeholder="https://example.com">
+        <button id="shorten-btn">
+            Shorten URL
+        </button>
+        </form>
+    </section>
+
+    <section id="result">
+        <h2>Generated Link</h2>
+        <p>Your shortened URL will appear here.</p>
+    </section>
+
+    <section id="history">
+        <h2>Recent Links</h2>
+        <p>No links yet.</p>
+    </section>
+    
     </main>
-    <section id="result"></section>
-    <section id="history"></section>
     
     <footer>
+    © 2026 ShortIck
     </footer>
-    
-    
     
     <!--JavaScript Files Linked To The Project.-->
     <script src="js/app.js"></script>
     <script src="js/generator.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/qr.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/statistics.js"></script>
     <script src="js/storage.js"></script>
-    <script src="js/ui.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="js/validator.js"></script>
     
 </body>
 </html>
