@@ -6,39 +6,41 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const url = input.value.trim();
+
     console.log("User entered:", url);
 
     if (validateURL(url)) {
         const shortCode = generateShortCode();
-        const shortURL = `https://shortick.vercel.app/${shortCode}`;
 
-        console.log("Original URL:", url);
-        console.log("Short URL:", shortURL);
+        // Future deployment:
+        // const shortURL = `https://shortick.vercel.app/${shortCode}`;
 
-        // Version with plain text
+        console.log("Short Code:", shortCode);
+
+        result.innerHTML = `
+            <h2>Generated Link</h2>
+            <p><strong>Original URL:</strong> ${url}</p>
+            <p><strong>Short Code:</strong> ${shortCode}</p>
+        `;
+
+        /*
+        // I Will Uncomment after deploying to Vercel
+
         result.innerHTML = `
             <h2>Generated Link</h2>
             <p><strong>Original URL:</strong> ${url}</p>
             <p><strong>Short URL:</strong> ${shortURL}</p>
         `;
-
-        // Version with clickable link
-        /*
-        result.innerHTML = `
-            <h2>Generated Link</h2>
-            <p><strong>Original URL:</strong> ${url}</p>
-            <p>
-                <strong>Short URL:</strong>
-                <a href="${shortURL}" target="_blank">${shortURL}</a>
-            </p>
-        `;
         */
+
     } else {
         console.log("Invalid URL");
+
         result.innerHTML = `
             <h2>Generated Link</h2>
-            <p>❌ Please enter a valid URL.</p>
+            <p>❌ Please enter a valid HTTP or HTTPS URL.</p>
         `;
     }
+
     input.value = "";
 });
