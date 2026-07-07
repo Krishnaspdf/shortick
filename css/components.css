@@ -1,0 +1,102 @@
+/*Hero
+Buttons
+Cards
+History
+Inputs
+Footer*/
+
+section {
+    background: #1A1D24;
+    border: 1px solid #2B303B;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+
+
+.history-item p {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #2B303B;
+    padding: 1rem 0;
+}
+
+.history-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+#history h2 {
+    margin-bottom: 1.5rem;
+}
+
+#shortener-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#shortener-form label {
+    display: none;
+}
+
+#url-input {
+    flex: 1;
+    min-width: 350px;
+
+    padding: 1rem 1.25rem;
+
+    font-size: 1rem;
+
+    color: #F5F7FA;
+    background: #161B28;
+
+    border: 2px solid #2B303B;
+    border-radius: 12px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+#url-input::placeholder {
+    color: #7F8793;
+}
+
+#url-input:focus {
+    border-color: #4F8CFF;
+    box-shadow: 0 0 15px rgba(79, 140, 255, 0.3);
+}
+
+#shorten-btn {
+    padding: 1rem 2rem;
+}
+
+/* Hero Section */
+
+#hero h1 {
+    margin-bottom: 0.75rem;
+}
+
+#hero h2 {
+    margin-bottom: 1rem;
+}
+
+/* Result Section */
+
+#result h2 {
+    margin-bottom: 1rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,14 @@
+:root {
+    --background: #0F1117;
+    --surface: #1A1D24;
+    --surface-hover: #242832;
+    --primary: #4F8CFF;
+    --primary-hover: #3B7AF7;
+    --text: #F5F7FA;
+    --text-secondary: #A5ADBA;
+    --success: #3DDC84;
+    --danger: #FF5C5C;
+    --border: #2B303B;
+    --shadow: 0 10px 35px rgba(0,0,0,.35);
+    --radius: 12px;
+}

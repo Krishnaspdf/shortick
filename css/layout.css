@@ -1,0 +1,35 @@
+/*header
+main
+footer
+
+display:flex
+grid
+gap
+padding
+margin*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem 0;
+}
+
+main {
+    flex: 1;
+
+    width: min(900px, 90%);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 2rem 0 4rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #A5ADBA;
+}

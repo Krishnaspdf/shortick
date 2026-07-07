@@ -37,14 +37,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="history-item">
                     <p><strong>Short Code:</strong> ${shortCode}</p>
                     <p><strong>Original URL:</strong> ${originalURL}</p>
+                    <div class ="history-actions">
 
-                    <button class="copy-btn" data-code="${shortCode}">
-                        Copy
-                    </button>
+                        <button class="copy-btn" data-code="${shortCode}">
+                            Copy
+                        </button>
 
-                    <button class="delete-btn" data-code="${shortCode}">
-                        Delete
-                    </button>
+                        <button class="delete-btn" data-code="${shortCode}">
+                            Delete
+                        </button>
+                        
+                    </div>
                 </div>`;
         });
         const copyButtons = document.querySelectorAll(".copy-btn");

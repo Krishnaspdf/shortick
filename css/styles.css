@@ -1,0 +1,74 @@
+/*body
+*
+img
+button
+input
+a*/
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    font-family: Inter, system-ui, sans-serif;
+    color: #F5F7FA;
+
+    background: radial-gradient(
+        circle at top,
+        #1B2335 0%,
+        #161B28 40%,
+        #0F1117 100%
+    );
+}
+
+/* Primary Button */
+
+button {
+    background-color: #4F8CFF;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(52, 152, 219, 0.7);
+}
+
+/* Copy Button */
+
+.copy-btn {
+    background-color: #4F8CFF;
+}
+
+/* Delete Button */
+
+.delete-btn {
+    background-color: transparent;
+    color: #ff5c5c;
+    border: 2px solid #ff5c5c;
+    box-shadow: none;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #ff5c5c;
+    color: white;
+}
